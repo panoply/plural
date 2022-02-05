@@ -1,0 +1,52 @@
+{
+  "name": "@sissel/plural",
+  "version": "1.0.0",
+  "description": "A simple helper utility for dealing with plurals in a string",
+  "types": "index.d.ts",
+  "module": "index.mjs",
+  "main": "package/index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c --environment prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panoply/plural.git"
+  },
+  "keywords": [
+    "plural"
+  ],
+  "author": "",
+  "prettier": "@brixtol/prettier-config",
+  "eslintConfig": {
+    "ignorePatterns": ["index.js", "index.mjs"],
+    "extends": [
+      "@sissel/eslint-config"
+    ]
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/panoply/plural/issues"
+  },
+  "homepage": "https://github.com/panoply/plural#readme",
+  "devDependencies": {
+    "@sissel/eslint-config": "^1.0.0",
+    "@sissel/prettier-config": "^1.0.0",
+    "@sissel/rollup-config": "^1.0.1",
+    "@sissel/tsconfig": "^1.0.0",
+    "eslint": "^8.8.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "postcss": "^8.4.6",
+    "prettier": "^2.5.1",
+    "rollup": "^2.67.0",
+    "typescript": "^4.5.5"
+  }
+}

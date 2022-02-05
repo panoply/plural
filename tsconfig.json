@@ -1,0 +1,10 @@
+{
+  "extends": "@sissel/tsconfig",
+  "files": [
+    "src/index.ts"
+  ],
+  "compilerOptions": {
+    "outFile": "index.d.ts",
+    "emitDeclarationOnly": true
+  }
+}
